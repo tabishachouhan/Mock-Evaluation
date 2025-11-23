@@ -61,3 +61,19 @@ function multiply(a,b) {
 
 const multiply = (a,b) =>a*b;
 console.log(multiply(4,5));
+
+
+/* Q7:optional chaining */
+
+let emp = {
+    name: "Prakash",
+    details: {
+        department: "IT",
+        profile: { role:"Developer"}
+
+    }
+};
+
+let role= emp?.details?.profile?.role;emp;
+console.log(role);
+
